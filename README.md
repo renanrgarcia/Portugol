@@ -1,2 +1,2 @@
-# portugol
+# Portugol
 Portugol projects
