@@ -1,0 +1,24 @@
+11 Desafios Portugol
+
+1- Crie um algoritmo que leia um número e alerte quando o mesmo for maior do que 500.
+
+2- Crie um algoritmo que leia uma senha fornecida pelo usuário composta por caracteres para informar se a senha é válida ou inválida. A senha do sistema corresponde a palavra “THAIS”. Obs.: O algoritmo não faz distinção de letras maiúsculas e minúsculas.
+
+
+3- Crie um algoritmo que leia um número e alerte quando o mesmo estiver entre 100 e 100.
+
+4- Crie um algoritmo que leia três notas para calcular a média do aluno e determinar se o mesmo foi aprovado ou reprovado. A média para aprovação é 6,5.
+
+5- Crie um algoritmo que leia um número inteiro e informe se ele é ou não divisível por 7.
+
+6- Crie um algoritmo que leia um número inteiro e informe se ele é par ou ímpar.
+
+7- Crie um algoritmo que leia dois valores diferentes e determine o maior.
+
+8- Crie um algoritmo que após receber o Salário Bruto, calcule o salário líquido descontando 25% quando o salário bruto for menor que R$ 2000, caso contrário descontar 35%. No final, exiba o salário líquido.
+
+9- Um comerciante comprou um produto e quer vendê-lo com um lucro de 50% se o valor da compra for menor que R$ 200, caso contrário o lucro será de 31,5%. Crie um algoritmo que leia o valor da compra e exiba o valor da venda.
+
+10- Crie um algoritmo que leia a média das duas unidades (matérias) para calcular a sua média final. Em seguida, exiba a média final e o resultado que pode ser aprovado, prova final ou reprovado. A média de aprovação é 7, menor que 3 para reprovação e as demais prova final.
+
+11- Crie um algoritmo que leia três números e exibe os números em ordem crescente.
