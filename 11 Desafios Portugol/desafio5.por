@@ -1,5 +1,10 @@
 programa
 {
+
+	/*
+	 * Desafio 5:  Crie um algoritmo que leia um número inteiro e informe se ele é ou não 
+	 * divisível por 7.
+	*/
 	
 	funcao inicio(){
 		caracter fim
@@ -46,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1262; 
+ * @POSICAO-CURSOR = 125; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,5 +1,9 @@
 programa
 {
+	/*
+	 * Desafio 3: Crie um algoritmo que leia um número e alerte quando o mesmo estiver entre 100 e 100.
+	 */	
+	
 	funcao inicio(){
 		caracter fim
 		
@@ -45,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1286; 
+ * @POSICAO-CURSOR = 28; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

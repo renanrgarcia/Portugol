@@ -1,5 +1,9 @@
 programa
 {
+
+	/*
+	 * Desafio 6:  Crie um algoritmo que leia um número inteiro e informe se ele é par ou ímpar.
+	*/
 	
 	funcao inicio(){
 		caracter fim
@@ -46,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 858; 
+ * @POSICAO-CURSOR = 29; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

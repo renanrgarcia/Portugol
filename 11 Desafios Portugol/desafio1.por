@@ -1,5 +1,9 @@
 programa
 {	
+	/*
+	 * Desafio 1: Crie um algoritmo que leia um número e alerte quando o mesmo for maior do que 500.
+	 */
+	
 	funcao inicio(){
 		caracter fim
 		
@@ -19,7 +23,8 @@ programa
 		leia(fim)
  		enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o programa.
 			limpa()
-			escreva("Não entendi sua resposta. Você gostaria de executar o programa novamente? (Digite s ou n) ")
+			escreva("Não entendi sua resposta. \n")
+			escreva("Você gostaria de executar o programa novamente? (Digite s ou n) ")
 			leia(fim)
      	}
 		limpa()
@@ -48,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1021; 
+ * @POSICAO-CURSOR = 838; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,5 +1,10 @@
 programa
 {
+	/*
+	 * Desafio 4:  Crie um algoritmo que leia três notas para calcular a média do aluno e 
+	 * determinar se o mesmo foi aprovado ou reprovado. A média para aprovação é 6,5.
+	*/
+	
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
@@ -55,9 +60,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 911; 
+ * @POSICAO-CURSOR = 12; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {nota, 33, 7, 4};
+ * @SIMBOLOS-INSPECIONADOS = {nota, 38, 7, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

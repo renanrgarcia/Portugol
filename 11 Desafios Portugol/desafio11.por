@@ -1,5 +1,10 @@
 programa
 {
+	
+	/*
+	 * Desafio 7: Crie um algoritmo que leia dois valores diferentes e determine o maior.
+	 */
+	
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
@@ -28,7 +33,11 @@ programa
     		}
 	escreva("Obrigado por utilizar esse programa!")
 	}
-	
+
+
+	// Objetivo: 
+	// Par. ent:
+	// 
 	funcao teste() { // Avalia qual dos dois números é maior e qual é o menor
 		real num1, num2, num3
 		real menor, maior
@@ -43,9 +52,9 @@ programa
 		leia(num3)
 		
 		// Definição do maior
-		maior = mat.maior_numero(num1,num2)
+		maior = mat.maior_numero(num1,num2) 
 		maior = mat.maior_numero(maior,num3)
-		ordem[0] = maior
+		ordem[0] = maior 
 
 		// Definição do menor
 		menor = mat.menor_numero(num1,num2)
@@ -89,9 +98,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1289; 
+ * @POSICAO-CURSOR = 12; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {menor, 34, 7, 5}-{maior, 34, 14, 5}-{ordem, 35, 7, 5};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

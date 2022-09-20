@@ -1,5 +1,11 @@
 programa
 {
+	/*
+	 * Desafio 2: Crie um algoritmo que leia uma senha fornecida pelo usuário composta por caracteres 
+	 * para informar se a senha é válida ou inválida. A senha do sistema corresponde a palavra “SENHA”. 
+	 * Obs.: O algoritmo não faz distinção de letras maiúsculas e minúsculas.
+	 */
+	
 	inclua biblioteca Texto --> t
 
 	funcao inicio(){
@@ -28,8 +34,9 @@ programa
 		}
 	escreva("O sistema foi encerrado. ")
 	}
-
-	funcao login(){ // Função que valida a senha e efetua o login.
+	
+	// Objetivo: Função que valida a senha e efetua o login
+	funcao EfetuarLogin(){ 
 		cadeia senha
 		
 		escreva("Digite a senha para logar no Sistema: ")
@@ -37,7 +44,7 @@ programa
 		senha = t.caixa_alta(senha) // Função para retirar a distinção entre maiúsculas e minúsculas.
 		limpa()
 		
-		enquanto (senha != "THAIS") { // Loop ocorre até a pessoa acertar a senha.
+		enquanto (senha != "SENHA") { // Loop ocorre até a pessoa acertar a senha.
 			escreva("Senha incorreta! Digite a senha novamente: ")
 			leia(senha)
 			senha = t.caixa_alta(senha) 
@@ -46,7 +53,7 @@ programa
 		escreva("Login efetuado com sucesso! \n")
 	}
 
-	funcao logout() { // Função que efetua o logout.
+	funcao EfetuarLogout() { // Função que efetua o logout.
 		caracter fim
 	    
 		escreva("Você gostaria de fazer o logout? (s ou n) ")
@@ -66,7 +73,7 @@ programa
 				escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
 				leia(fim)
 	      		}
-	      	leia(fim)
+	      	leia(fim) // INVESTIGAR ERRO
 	      	limpa()
     		}
 		escreva("Você foi deslogado! \n")
@@ -78,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1371; 
+ * @POSICAO-CURSOR = 296; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

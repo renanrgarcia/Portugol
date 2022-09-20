@@ -1,5 +1,13 @@
 programa
 {	
+	
+	/*
+	 * Desafio 10: Crie um algoritmo que leia a média das duas unidades (matérias) para calcular 
+	 * a sua média final. Em seguida, exiba a média final e o resultado que pode ser aprovado, 
+	 * prova final ou reprovado. A média de aprovação é 7, menor que 3 para reprovação e as demais 
+	 * prova final.
+	 */
+	
 	inclua biblioteca Matematica --> mat
 
 	cadeia nomes [2] = {"Matéria 1", "Matéria 2"} // Unidades(matérias)
@@ -87,7 +95,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2584; 
+ * @POSICAO-CURSOR = 319; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,5 +1,12 @@
 programa
 {
+	
+	/*
+	 * Desafio 9: Um comerciante comprou um produto e quer vendê-lo com um lucro de 50% se o 
+	 * valor da compra for menor que R$ 200, caso contrário o lucro será de 31,5%. Crie um 
+	 * algoritmo que leia o valor da compra e exiba o valor da venda.
+	 */
+	
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
@@ -65,7 +72,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 894; 
+ * @POSICAO-CURSOR = 264; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

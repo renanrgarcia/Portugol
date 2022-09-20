@@ -1,5 +1,12 @@
 programa
 {
+	
+	/*
+	 * Desafio 8: Crie um algoritmo que após receber o Salário Bruto, calcule o salário líquido 
+	 * descontando 25% quando o salário bruto for menor que R$ 2000, caso contrário descontar 35%. 
+	 * No final, exiba o salário líquido.
+	 */
+	
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
@@ -52,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 882; 
+ * @POSICAO-CURSOR = 247; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
