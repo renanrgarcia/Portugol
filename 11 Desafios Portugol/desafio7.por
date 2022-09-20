@@ -8,26 +8,26 @@ programa
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
-		caracter fim
+		caracter Iniciar
 		
 		escreva("Esse programa responde qual número é o maior entre dois digitados. \n")
 		escreva("Você quer executar o programa? (s ou n) ") 
-	leia(fim)
-	enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o programa.
+	leia(Iniciar)
+	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
 		limpa()
 		escreva("Não entendi sua resposta. Você gostaria de executar o programa? (Digite s ou n) ")
-		leia(fim)
+		leia(Iniciar)
     		}
 	limpa()
         
-    	enquanto (fim == 's') { // executa o teste enquanto o usuário quiser.
-		teste()
+    	enquanto (Iniciar == 's') { // executa o teste enquanto o usuário quiser.
+		CompararNumeros()
 		escreva("Você quer executar o programa novamente? (s ou n) \n")
-		leia(fim)
-		enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o programa.
+		leia(Iniciar)
+		enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
 			limpa()
 			escreva("Não entendi sua resposta. Você gostaria de executar o programa novamente? (Digite s ou n) ")
-			leia(fim)
+			leia(Iniciar)
       		}
       	limpa()
     	}
@@ -35,20 +35,20 @@ programa
 		escreva("Obrigado por utilizar esse programa!")
 	}
 	
-	funcao teste() { // Avalia qual dos dois números é maior e qual é o menor
-		real num1, num2, maior, menor
+	funcao CompararNumeros() { // Avalia qual dos dois números é maior e qual é o menor
+		real Numero1, Numero2, NumeroMaior, NumeroMenor
 		
 		escreva("Digite dois números: \n") 
 		escreva("1º número: ") 
-		leia(num1)
+		leia(Numero1)
 		escreva("2º número: ")
-		leia(num2)
+		leia(Numero2)
 
-		maior = mat.maior_numero(num1,num2) // Função que retorna qual maior valor
-		menor = mat.menor_numero(num1,num2) // Função que retorna qual menor valor
+		NumeroMaior = mat.maior_numero(Numero1,Numero2) // Função que retorna qual maior valor
+		NumeroMenor = mat.menor_numero(Numero1,Numero2) // Função que retorna qual menor valor
 		
-		escreva("O maior número é ", maior, ". \n")
-		escreva("O menor número é ", menor, ". \n")
+		escreva("O maior número é ", NumeroMaior, ". \n")
+		escreva("O menor número é ", NumeroMenor, ". \n")
 	}
 } 
 /* $$$ Portugol Studio $$$ 
@@ -56,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 107; 
+ * @POSICAO-CURSOR = 765; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

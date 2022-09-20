@@ -9,26 +9,26 @@ programa
 	inclua biblioteca Texto --> t
 
 	funcao inicio(){
-	caracter fim
+	caracter Iniciar
     	
 	escreva("Você gostaria de fazer login no sistema? (Digite s ou n) ")
-	leia(fim)
-	enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o login.
+	leia(Iniciar)
+	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o login.
      	limpa()
      	escreva("Não entendi sua resposta. Você gostaria de fazer login no sistema? (Digite s ou n) ")
-     	leia(fim)
+     	leia(Iniciar)
 	}
 	limpa()
 
-	enquanto (fim == 's') {
-		login() //Chama função login.
-		logout() //Chama função logout.
+	enquanto (Iniciar == 's') {
+		EfetuarLogin() //Chama função login.
+		EfetuarLogout() //Chama função logout.
 		escreva("Você gostaria de fazer login no sistema novamente? (Digite s ou n) ")
-		leia(fim)
-      	enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o login.
+		leia(Iniciar)
+      	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o login.
 			limpa()
 			escreva("Não entendi sua resposta. Você gostaria de fazer login no sistema novamente? (Digite s ou n) ")
-			leia(fim)
+			leia(Iniciar)
       		}	
       	limpa()
 		}
@@ -37,43 +37,43 @@ programa
 	
 	// Objetivo: Função que valida a senha e efetua o login
 	funcao EfetuarLogin(){ 
-		cadeia senha
+		cadeia Senha
 		
 		escreva("Digite a senha para logar no Sistema: ")
-		leia(senha)
-		senha = t.caixa_alta(senha) // Função para retirar a distinção entre maiúsculas e minúsculas.
+		leia(Senha)
+		Senha = t.caixa_alta(Senha) // Função para retirar a distinção entre maiúsculas e minúsculas.
 		limpa()
 		
-		enquanto (senha != "SENHA") { // Loop ocorre até a pessoa acertar a senha.
+		enquanto (Senha != "SENHA") { // Loop ocorre até a pessoa acertar a senha.
 			escreva("Senha incorreta! Digite a senha novamente: ")
-			leia(senha)
-			senha = t.caixa_alta(senha) 
+			leia(Senha)
+			Senha = t.caixa_alta(Senha) 
 			limpa()
 		}		
 		escreva("Login efetuado com sucesso! \n")
 	}
 
 	funcao EfetuarLogout() { // Função que efetua o logout.
-		caracter fim
+		caracter Sair
 	    
 		escreva("Você gostaria de fazer o logout? (s ou n) ")
-		leia(fim)
-		enquanto (fim != 's' e fim != 'n') { // Validação da resposta para realizar o logout.
+		leia(Sair)
+		enquanto (Sair != 's' e Sair != 'n') { // Validação da resposta para realizar o logout.
 			limpa()
 			escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
-			leia(fim)
+			leia(Sair)
 			}
 		limpa()
 	    
-		enquanto (fim != 's') {
+		enquanto (Sair != 's') {
 			escreva("Você continua logado! \n")
 			escreva("Você gostaria de fazer o logout? (s ou n) ")
-			enquanto (fim != 's' e fim != 'n') { // Validação da resposta para realizar o logout.
+			enquanto (Sair != 's' e Sair != 'n') { // Validação da resposta para realizar o logout.
 				limpa()
 				escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
-				leia(fim)
+				leia(Sair)
 	      		}
-	      	leia(fim) // INVESTIGAR ERRO
+	      	leia(Sair) // ERRO CORRIGIDO: variável estava igual a da função principal.
 	      	limpa()
     		}
 		escreva("Você foi deslogado! \n")
@@ -85,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 296; 
+ * @POSICAO-CURSOR = 330; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

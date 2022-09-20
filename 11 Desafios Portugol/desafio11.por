@@ -2,32 +2,32 @@ programa
 {
 	
 	/*
-	 * Desafio 7: Crie um algoritmo que leia dois valores diferentes e determine o maior.
+	 * Desafio 11: Crie um algoritmo que leia três números e exiba os números em ordem crescente.
 	 */
 	
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio(){
-		caracter fim
+		caracter Iniciar
 		
-		escreva("Esse programa apresenta em ordem crescente três números digitados. \n")
+		escreva("Esse programa apresenta em OrdemValores crescente três números digitados. \n")
 		escreva("Você quer executar o programa? (s ou n) ") 
-    leia(fim)
-	enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o programa.
+    leia(Iniciar)
+	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
 		limpa()
 		escreva("Não entendi sua resposta. Você gostaria de executar o programa? (Digite s ou n) ")
-		leia(fim)
+		leia(Iniciar)
     		}
 	limpa()
         
-	enquanto (fim == 's') { // executa o teste enquanto o usuário quiser.
-		teste()
+	enquanto (Iniciar == 's') { // executa o teste enquanto o usuário quiser.
+		CompararNumeros()
 		escreva("Você quer executar o programa novamente? (s ou n) ")
-		leia(fim)
-		enquanto (fim != 's' e fim != 'n') { // Validação da resposta para iniciar o programa.
+		leia(Iniciar)
+		enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
 			limpa()
 			escreva("Não entendi sua resposta. Você gostaria de executar o programa novamente? (Digite s ou n) ")
-			leia(fim)
+			leia(Iniciar)
       		}
       	limpa()
     		}
@@ -38,58 +38,58 @@ programa
 	// Objetivo: 
 	// Par. ent:
 	// 
-	funcao teste() { // Avalia qual dos dois números é maior e qual é o menor
-		real num1, num2, num3
-		real menor, maior
-		real ordem [3]
+	funcao CompararNumeros() { // Avalia qual dos dois números é maior e qual é o menor
+		real Numero1, Numero2, Numero3
+		real Menor, Maior
+		real OrdemValores [3]
 		
 		escreva("Digite três números: \n") 
 		escreva("1º número: ") 
-		leia(num1)
+		leia(Numero1)
 		escreva("2º número: ")
-		leia(num2)
+		leia(Numero2)
 		escreva("3º número: ")
-		leia(num3)
+		leia(Numero3)
 		
 		// Definição do maior
-		maior = mat.maior_numero(num1,num2) 
-		maior = mat.maior_numero(maior,num3)
-		ordem[0] = maior 
+		Maior = mat.maior_numero(Numero1,Numero2) 
+		Maior = mat.maior_numero(Maior,Numero3)
+		OrdemValores[0] = Maior 
 
 		// Definição do menor
-		menor = mat.menor_numero(num1,num2)
-		menor = mat.menor_numero(menor,num3)
-		ordem[2] = menor
+		Menor = mat.menor_numero(Numero1,Numero2)
+		Menor = mat.menor_numero(Menor,Numero3)
+		OrdemValores[2] = Menor
 
 		// Definição do médio
-		se (num1 == maior) {  
-			se (num2 == menor){ // num1 > num3 > num2
-				ordem[1] = num3
-			} senao se (num3 == menor) { // num1 > num2 > num3
-				ordem[1] = num2
+		se (Numero1 == Maior) {  
+			se (Numero2 == Menor){ // Numero1 > Numero3 > Numero2
+				OrdemValores[1] = Numero3
+			} senao se (Numero3 == Menor) { // Numero1 > Numero2 > Numero3
+				OrdemValores[1] = Numero2
 			}
 		}
 
-		se (num2 == maior) {  
-			se (num1 == menor){ // num2 > num3 > num1
-				ordem[1] = num3
-			} senao se (num3 == menor) { // num2 > num1 > num3
-				ordem[1] = num1
+		se (Numero2 == Maior) {  
+			se (Numero1 == Menor){ // Numero2 > Numero3 > Numero1
+				OrdemValores[1] = Numero3
+			} senao se (Numero3 == Menor) { // Numero2 > Numero1 > Numero3
+				OrdemValores[1] = Numero1
 			}
 		}
 
-		se (num3 == maior) {  
-			se (num2 == menor){ // num3 > num1 > num2
-				ordem[1] = num1
-			} senao se (num1 == menor) { // num3 > num2 > num1
-				ordem[1] = num2
+		se (Numero3 == Maior) {  
+			se (Numero2 == Menor){ // Numero3 > Numero1 > Numero2
+				OrdemValores[1] = Numero1
+			} senao se (Numero1 == Menor) { // Numero3 > Numero2 > Numero1
+				OrdemValores[1] = Numero2
 			}
 		}
 
 		// Retorno dos valores 
-		escreva("O maior número é ", ordem[0], ". \n")
-		escreva("O número do meio é ", ordem[1], ". \n")
-		escreva("O menor número é ", ordem[2], ". \n")
+		escreva("O maior número é ", OrdemValores[0], ". \n")
+		escreva("O número do meio é ", OrdemValores[1], ". \n")
+		escreva("O menor número é ", OrdemValores[2], ". \n")
 			
 	}
 } 
@@ -98,7 +98,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 12; 
+ * @POSICAO-CURSOR = 100; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
