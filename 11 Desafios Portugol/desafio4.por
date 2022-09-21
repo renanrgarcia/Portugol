@@ -5,8 +5,6 @@ programa
 	 * determinar se o mesmo foi aprovado ou reprovado. A média para aprovação é 6,5.
 	*/
 	
-	inclua biblioteca Matematica --> mat
-	
 	funcao inicio(){
 		caracter Iniciar
 		
@@ -60,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1023; 
+ * @POSICAO-CURSOR = 191; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

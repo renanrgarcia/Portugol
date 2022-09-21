@@ -5,8 +5,6 @@ programa
 	 * Desafio 7: Crie um algoritmo que leia dois valores diferentes e determine o maior.
 	 */
 	
-	inclua biblioteca Matematica --> mat
-	
 	funcao inicio(){
 		caracter Iniciar
 		
@@ -56,7 +54,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 765; 
+ * @POSICAO-CURSOR = 107; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

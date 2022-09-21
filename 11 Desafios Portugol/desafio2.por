@@ -5,8 +5,11 @@ programa
 	 * para informar se a senha é válida ou inválida. A senha do sistema corresponde a palavra “SENHA”. 
 	 * Obs.: O algoritmo não faz distinção de letras maiúsculas e minúsculas.
 	 */
-	
-	inclua biblioteca Texto --> t
+
+	/* 
+	 *  Versão 1.0.1: Erro corrgido - variável Iniciar da função principal era a mesma na função
+	 *  EfetuarLogout.
+	 */
 
 	funcao inicio(){
 	caracter Iniciar
@@ -73,7 +76,7 @@ programa
 				escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
 				leia(Sair)
 	      		}
-	      	leia(Sair) // ERRO CORRIGIDO: variável estava igual a da função principal.
+	      	leia(Sair) 
 	      	limpa()
     		}
 		escreva("Você foi deslogado! \n")
@@ -85,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 330; 
+ * @POSICAO-CURSOR = 422; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

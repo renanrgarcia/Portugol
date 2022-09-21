@@ -8,8 +8,6 @@ programa
 	 * prova final.
 	 */
 	
-	inclua biblioteca Matematica --> mat
-
 	cadeia Nomes [2] = {"Matéria 1", "Matéria 2"} // Unidades(matérias)
 	real Notas [2][4]  // Cada linha, as notas do aluno "l" nos bimestres
 	real Media[2] // Média de cada bimestre
@@ -95,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2862; 
+ * @POSICAO-CURSOR = 326; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -6,9 +6,7 @@ programa
 	 * valor da compra for menor que R$ 200, caso contrário o lucro será de 31,5%. Crie um 
 	 * algoritmo que leia o valor da compra e exiba o valor da venda.
 	 */
-	
-	inclua biblioteca Matematica --> mat
-	
+		
 	funcao inicio(){
 		caracter Iniciar
 		
@@ -72,7 +70,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1485; 
+ * @POSICAO-CURSOR = 2324; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
