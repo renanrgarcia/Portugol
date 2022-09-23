@@ -6,39 +6,37 @@ programa
 	 * Obs.: O algoritmo não faz distinção de letras maiúsculas e minúsculas.
 	 */
 
-	/* 
-	 *  Versão 1.0.1: Erro corrgido - variável Iniciar da função principal era a mesma na função
-	 *  EfetuarLogout.
-	 */
+	// Erro corrigido - variável Iniciar da função principal era a mesma na função EfetuarLogout.
 
+	inclua biblioteca Texto --> t
+	caracter Iniciar = 's'
+
+	// Objetivo: Efetuar o login e o logout do sistema. 
+	// Entradas: Número real e resposta caracter.
+	// Saídas: Texto informando a relação entre o número informado e 500.
 	funcao inicio(){
-	caracter Iniciar
-    	
-	escreva("Você gostaria de fazer login no sistema? (Digite s ou n) ")
-	leia(Iniciar)
-	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o login.
-     	limpa()
-     	escreva("Não entendi sua resposta. Você gostaria de fazer login no sistema? (Digite s ou n) ")
-     	leia(Iniciar)
-	}
-	limpa()
-
-	enquanto (Iniciar == 's') {
-		EfetuarLogin() //Chama função login.
-		EfetuarLogout() //Chama função logout.
-		escreva("Você gostaria de fazer login no sistema novamente? (Digite s ou n) ")
-		leia(Iniciar)
-      	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o login.
-			limpa()
-			escreva("Não entendi sua resposta. Você gostaria de fazer login no sistema novamente? (Digite s ou n) ")
-			leia(Iniciar)
-      		}	
-      	limpa()
+		enquanto (Iniciar == 's') {
+			faca {
+				escreva("Você gostaria de fazer login no sistema? (s ou n) ") 
+	    			leia(Iniciar)
+	    			ValidarSimOuNao() 
+	    			limpa()
+	    			se (Iniciar != 's' e Iniciar != 'n') { 
+	    				CorrigirResposta() 
+	    			}
+	    			se (Iniciar == 'n') {
+					escreva("Obrigado por utilizar esse programa!")
+	    			} senao se (Iniciar == 's'){
+	    				EfetuarLogin()
+	    				EfetuarLogout()
+	    			}
+			} enquanto (Iniciar != 'n') 
 		}
-	escreva("O sistema foi encerrado. ")
-	}
-	
-	// Objetivo: Função que valida a senha e efetua o login
+	} 
+
+    	// Objetivo: Validar a senha e efetuar o login.
+    	// Entradas: Senha. 
+    	// Saídas: Mensagem de login efetuado.
 	funcao EfetuarLogin(){ 
 		cadeia Senha
 		
@@ -47,7 +45,7 @@ programa
 		Senha = t.caixa_alta(Senha) // Função para retirar a distinção entre maiúsculas e minúsculas.
 		limpa()
 		
-		enquanto (Senha != "SENHA") { // Loop ocorre até a pessoa acertar a senha.
+		enquanto (Senha != "SENHA") {
 			escreva("Senha incorreta! Digite a senha novamente: ")
 			leia(Senha)
 			Senha = t.caixa_alta(Senha) 
@@ -56,39 +54,59 @@ programa
 		escreva("Login efetuado com sucesso! \n")
 	}
 
-	funcao EfetuarLogout() { // Função que efetua o logout.
-		caracter Sair
-	    
-		escreva("Você gostaria de fazer o logout? (s ou n) ")
-		leia(Sair)
-		enquanto (Sair != 's' e Sair != 'n') { // Validação da resposta para realizar o logout.
-			limpa()
-			escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
-			leia(Sair)
-			}
-		limpa()
-	    
+    	// Objetivo: Efetuar o logout.
+    	// Entradas: Senha. 
+    	// Saídas: Mensagem de login efetuado.
+	funcao EfetuarLogout() { 
+		caracter Sair = 'n'
+		
 		enquanto (Sair != 's') {
-			escreva("Você continua logado! \n")
 			escreva("Você gostaria de fazer o logout? (s ou n) ")
-			enquanto (Sair != 's' e Sair != 'n') { // Validação da resposta para realizar o logout.
-				limpa()
-				escreva("Não entendi sua resposta. Você gostaria de fazer logout do sistema? (Digite s ou n) ")
-				leia(Sair)
-	      		}
-	      	leia(Sair) 
-	      	limpa()
-    		}
-		escreva("Você foi deslogado! \n")
+			leia(Sair)
+	    		ValidarSimOuNao() 
+	    		limpa()
+	    		se (Sair != 's' e Sair != 'n') { 
+	    			CorrigirResposta() 
+	    		}
+	    		se (Sair == 'n') {
+				escreva("Você continua logado! \n")
+	    		} senao se (Sair == 's'){
+				escreva("Você foi deslogado com segurança! \n")
+	    		}
+		}
 	}
-}
 
+	// Objetivo: Transformar 'S' para 's' ou 'N' para 'n'.
+	// Entradas: Input "Iniciar". Se diferente de 'S' ou 'N', a função é ignorada.
+	// Saídas: 's' ou 'n'.
+	funcao ValidarSimOuNao() {
+		se (Iniciar == 'S') {
+    			Iniciar = 's'	
+    		}
+    		se (Iniciar == 'N') {
+    			Iniciar = 'n'	
+    		}
+	}
+
+	// Objetivo: Validar resposta incorreta.
+	// Entradas: Input "Iniciar". Se diferente de 's' ou 'n', solicita nova resposta.
+	// Saídas: 's' ou 'n'.
+	funcao CorrigirResposta() {
+		enquanto (Iniciar != 's' e Iniciar != 'n') {
+			escreva("Resposta inválida! Digite 's' para sim ou 'n' para não: ")
+			leia(Iniciar)
+			ValidarSimOuNao()
+			limpa()
+		}
+	}	
+	
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 422; 
+ * @POSICAO-CURSOR = 888; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

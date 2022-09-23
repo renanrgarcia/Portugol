@@ -6,36 +6,37 @@ programa
 	 * descontando 25% quando o salário bruto for menor que R$ 2000, caso contrário descontar 35%. 
 	 * No final, exiba o salário líquido.
 	 */
-	
+
+	inclua biblioteca Matematica --> mat
+	caracter Iniciar = 's'
+
+	// Objetivo: Calcular o salário líquido com desconto dependendo do salário bruto informado.
+	// Entradas: Salário bruto.
+	// Saídas: Salário líquido e valor do desconto.
 	funcao inicio(){
-		caracter Iniciar
-		
 		escreva("Esse programa calcula o salário líquido após o desconto necessário. \n")
-		escreva("Você quer executar o programa? (s ou n) ") 
-	leia(Iniciar)
-	enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
-		limpa()
-		escreva("Não entendi sua resposta. Você gostaria de executar o programa? (Digite s ou n) ")
-		leia(Iniciar)
-    		}
-    	limpa()
-        
-    	enquanto (Iniciar == 's') { // executa o teste enquanto o usuário quiser.
-		CalcularDescontos()
-		escreva("Você quer executar o programa novamente? (s ou n) \n")
-		leia(Iniciar)
-		enquanto (Iniciar != 's' e Iniciar != 'n') { // Validação da resposta para iniciar o programa.
-			limpa()
-			escreva("Não entendi sua resposta. Você gostaria de executar o programa novamente? (Digite s ou n) ")
-			leia(Iniciar)
-      		}
-      	limpa()
-    		}
-		 
-	escreva("Obrigado por utilizar esse programa!")
-	}
-	
-	funcao CalcularDescontos() { // Recebe o salário bruto e faz o desconto correpondente ao montante informado.
+		enquanto (Iniciar == 's') {
+			faca {
+				escreva("Você quer executar o programa? (s ou n) ") 
+	    			leia(Iniciar)
+	    			ValidarSimOuNao() 
+	    			limpa()
+	    			se (Iniciar != 's' e Iniciar != 'n') { 
+	    				CorrigirResposta() 
+	    			}
+	    			se (Iniciar == 'n') {
+					escreva("Obrigado por utilizar esse programa!")
+	    			} senao se (Iniciar == 's'){
+	    				CalcularSalarioLiquido()
+	    			}
+			} enquanto (Iniciar != 'n') 
+		}
+	} 
+
+	// Objetivo: Calcular o salário líquido com desconto dependendo do salário bruto informado.
+	// Entradas: Salário bruto.
+	// Saídas: Salário líquido e valor do desconto.
+	funcao CalcularSalarioLiquido() { 
 		real SalarioBruto, SalarioLiquido
 		
 		escreva("Digite o salário bruto: R$ ") 
@@ -51,13 +52,37 @@ programa
 			escreva("O número digitado é R$ ", SalarioLiquido, ". O desconto foi de 35%. \n")
 		}
 	}
+	
+	// Objetivo: Transformar 'S' para 's' ou 'N' para 'n'.
+	// Entradas: Input "Iniciar". Se diferente de 'S' ou 'N', a função é ignorada.
+	// Saídas: 's' ou 'n'.
+	funcao ValidarSimOuNao() {
+		se (Iniciar == 'S') {
+    			Iniciar = 's'	
+    		}
+    		se (Iniciar == 'N') {
+    			Iniciar = 'n'	
+    		}
+	}
+
+	// Objetivo: Validar resposta incorreta.
+	// Entradas: Input "Iniciar". Se diferente de 's' ou 'n', solicita nova resposta.
+	// Saídas: 's' ou 'n'.
+	funcao CorrigirResposta() {
+		enquanto (Iniciar != 's' e Iniciar != 'n') {
+			escreva("Resposta inválida! Digite 's' para sim ou 'n' para não: ")
+			leia(Iniciar)
+			ValidarSimOuNao()
+			limpa()
+		}
+	}	
 } 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 253; 
+ * @POSICAO-CURSOR = 314; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
