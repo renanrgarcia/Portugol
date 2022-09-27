@@ -1,5 +1,5 @@
-<p align="center" height="50px">
-    <img alt="Portugol Studio" src="http://lite.acad.univali.br/portugol/assets/img/logo.png" title="Logo Portugol Studio">
+<p align="center" >
+    <img alt="Portugol Studio" height="50px" src="http://lite.acad.univali.br/portugol/assets/img/logo.png" title="Logo Portugol Studio">
 </p>
 
 <h1 align="center">🥇 Projetos Portugol 🥇</h1>
