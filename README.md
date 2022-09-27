@@ -1,9 +1,41 @@
-# Portugol
+<style>
+    #img {
+        height: 50px;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    a:hover {
+        color: red;
+    }
+</style>
 
-<h1 align=center>
-    <img alt="Portugol_Studio" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funivali.br%2Fportugolstudio&psig=AOvVaw1uX-evX_Is7UtH2UTK1s3G&ust=1664309931609000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJjn5-Sjs_oCFQAAAAAdAAAAABAD">
-</h1>
+<p id="img">
+    <img alt="Portugol Studio" src="images/logo.png" title="Logo Portugol Studio">
+</p>
 
-<h1>Portugol projects</h1>
+<h1>🥇 Projetos Portugol 🥇</h1>
 
-<p>Projeto atual: 11 desafios de lógica com Portugol Studio</p>
+<p>Esse projeto consiste na resolução de 11 desafios de lógica de programação com a ferramenta <a href="http://lite.acad.univali.br/portugol/" target="_blank">Portugol Studio</a>.</p>
+
+<h2>💥 Os desafios 💥</h2>
+
+<ul> 
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio1.por">Desafio 1</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio2.por">Desafio 2</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio3.por">Desafio 3</a></li>  
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio4.por">Desafio 4</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio5.por">Desafio 5</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio6.por">Desafio 6</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio7.por">Desafio 7</a></li>
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio8.por">Desafio 8</a></li>   
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio9.por">Desafio 9</a></li>   
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio10.por">Desafio 10</a></li>  
+    <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio11.por">Desafio 11</a></li> 
+</ul>
+
+<p align="right"> Desenvolvido por Renan Garcia 🔥🚀 </p>
