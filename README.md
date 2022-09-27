@@ -7,19 +7,19 @@
     <title>Projetos Portugol</title>
 
 <style>
-    #img {
-        height: 50px;
-        text-align: center;
-    }
-    h1 {
-        text-align: center;
-    }
-    h2 {
-        text-align: center;
-    }
-    a:hover {
-        color: red;
-    }
+#img {
+    height: 50px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+a:hover {
+    color: red;
+}
 </style>
 </head>
 <body>
