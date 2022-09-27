@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Portugol</title>
+
 <style>
     #img {
         height: 50px;
@@ -13,8 +21,9 @@
         color: red;
     }
 </style>
-
-<p id="img">
+</head>
+<body>
+    <p id="img">
     <img alt="Portugol Studio" src="images/logo.png" title="Logo Portugol Studio">
 </p>
 
@@ -39,3 +48,5 @@
 </ul>
 
 <p align="right"> Desenvolvido por Renan Garcia 🔥🚀 </p>
+</body>
+</html>
