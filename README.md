@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos Portugol</title>
-
-<style>
-#img {
-    height: 50px;
-    text-align: center;
-}
-h1 {
-    text-align: center;
-}
-h2 {
-    text-align: center;
-}
-a:hover {
-    color: red;
-}
-</style>
-</head>
-<body>
-    <p id="img">
-    <img alt="Portugol Studio" src="http://lite.acad.univali.br/portugol/assets/img/logo.png" title="Logo Portugol Studio">
+<p id="img">
+    <img align="center" height="50px" alt="Portugol Studio" src="http://lite.acad.univali.br/portugol/assets/img/logo.png" title="Logo Portugol Studio">
 </p>
 
-<h1>🥇 Projetos Portugol 🥇</h1>
+<h1 align="center">🥇 Projetos Portugol 🥇</h1>
 
 <p>Esse projeto consiste na resolução de 11 desafios de lógica de programação com a ferramenta <a href="http://lite.acad.univali.br/portugol/" target="_blank">Portugol Studio</a>.</p>
 
-<h2>💥 Os desafios 💥</h2>
+<h2 align="center">💥 Os desafios 💥</h2>
 
 <ul> 
     <li><a href="https://github.com/renanrgarcia/portugol/blob/main/11%20Desafios%20Portugol/desafio1.por">Desafio 1</a></li>
@@ -48,5 +23,3 @@ a:hover {
 </ul>
 
 <p align="right"> Desenvolvido por Renan Garcia 🔥🚀 </p>
-</body>
-</html>
