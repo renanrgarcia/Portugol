@@ -24,7 +24,7 @@ a:hover {
 </head>
 <body>
     <p id="img">
-    <img alt="Portugol Studio" src="images/logo.png" title="Logo Portugol Studio">
+    <img alt="Portugol Studio" src="http://lite.acad.univali.br/portugol/assets/img/logo.png" title="Logo Portugol Studio">
 </p>
 
 <h1>🥇 Projetos Portugol 🥇</h1>
